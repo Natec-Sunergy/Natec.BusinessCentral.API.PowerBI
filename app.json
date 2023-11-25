@@ -1,0 +1,29 @@
+{
+  "id": "2342c451-e1b9-46dd-815b-e0b1e30bd205",
+  "name": "API PowerBI",
+  "publisher": "Marije Jennifer Brummel",
+  "version": "0.1.20231125.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 73130,
+      "to": 73133
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "11.0"
+}
