@@ -1,4 +1,4 @@
-page 73130 "APIV1 - G/L Entry Entity"
+page 73130 "APIV1 - PTE G/L Entry Entity"
 {
     PageType = API;
     Caption = 'generalLedgerEntries';

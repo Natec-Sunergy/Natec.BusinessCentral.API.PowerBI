@@ -1,4 +1,4 @@
-page 73131 "APIV1 - Sales Invoice Entity"
+page 73131 "APIV1 - PTE Sales Inv. Entity"
 {
     PageType = API;
     Caption = 'salesInvoices';
@@ -24,46 +24,22 @@ page 73131 "APIV1 - Sales Invoice Entity"
             repeater(GroupName)
             {
                 field(id; Rec.SystemId) { }
-                field(No; Rec."No.")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(sellToCustomerName; Rec."Sell-to Customer Name")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(vatRegistrationNo; Rec."VAT Registration No.")
-                {
-                    ApplicationArea = VAT;
-                }
-                field(sellToAddress; Rec."Sell-to Address")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
+                field(No; Rec."No.") { }
+                field(sellToCustomerName; Rec."Sell-to Customer Name") { }
+                field(vatRegistrationNo; Rec."VAT Registration No.") { }
+                field(sellToAddress; Rec."Sell-to Address") { }
                 field(sellToAddress2; Rec."Sell-to Address 2")
                 {
-                    ApplicationArea = Basic, Suite;
                 }
                 field(sellToCity; Rec."Sell-to City")
                 {
-                    ApplicationArea = Basic, Suite;
                 }
                 field(sellToCounty; Rec."Sell-to County")
                 {
-                    ApplicationArea = Basic, Suite;
                 }
-                field(sellToPostCode; Rec."Sell-to Post Code")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(sellToCountryRegionCode; Rec."Sell-to Country/Region Code")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(sellToContactNo; Rec."Sell-to Contact No.")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
+                field(sellToPostCode; Rec."Sell-to Post Code") { }
+                field(sellToCountryRegionCode; Rec."Sell-to Country/Region Code") { }
+                field(sellToContactNo; Rec."Sell-to Contact No.") { }
                 field(sellToContact; Rec."Sell-to Contact")
                 {
                     ApplicationArea = Basic, Suite;
@@ -76,15 +52,10 @@ page 73131 "APIV1 - Sales Invoice Entity"
                 {
                     ApplicationArea = Basic, Suite;
                 }
-                field(postingDate; Rec."Posting Date")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(vatReportingDate;
-                Rec."VAT Reporting Date")
-                {
-                    ApplicationArea = VAT;
-                }
+                field(postingDate; Rec."Posting Date") { }
+                field(amount; Rec.Amount) { }
+                field(remainingAmount; Rec."Remaining Amount") { }
+                field(vatReportingDate; Rec."VAT Reporting Date") { }
                 field(dueDate; Rec."Due Date")
                 {
                     ApplicationArea = Basic, Suite;
@@ -250,30 +221,13 @@ page 73131 "APIV1 - Sales Invoice Entity"
                 {
                     ApplicationArea = Basic, Suite;
                 }
-                field(shipToContact; Rec."Ship-to Contact")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(billToName; Rec."Bill-to Name")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(billToAddress; Rec."Bill-to Address")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(billTtoAddress2; Rec."Bill-to Address 2")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(billToCity; Rec."Bill-to City")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(billToCounty; Rec."Bill-to County")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
+                field(shipToContact; Rec."Ship-to Contact") { }
+                field(billToCustomerNo; Rec."Bill-to Customer No.") { }
+                field(billToName; Rec."Bill-to Name") { }
+                field(billToAddress; Rec."Bill-to Address") { }
+                field(billTtoAddress2; Rec."Bill-to Address 2") { }
+                field(billToCity; Rec."Bill-to City") { }
+                field(billToCounty; Rec."Bill-to County") { }
                 field(billToPostCode; Rec."Bill-to Post Code")
                 {
                     ApplicationArea = Basic, Suite;
