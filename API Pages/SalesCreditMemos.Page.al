@@ -1,15 +1,15 @@
-page 73131 "APIV1 - PTE Sales Inv. Entity"
+page 73135 "APIV1 - PTE Sales Cr.M. Entity"
 {
     PageType = API;
-    Caption = 'salesInvoices';
-    EntityCaption = 'SalesInvoice';
-    EntitySetCaption = 'SalesInvoices';
+    Caption = 'salesCreditMemos';
+    EntityCaption = 'SalesCreditMemo';
+    EntitySetCaption = 'SalesCreditMemos';
     APIPublisher = 'natec';
     APIGroup = 'powerbi';
     APIVersion = 'v1.0';
-    EntityName = 'salesInvoice';
-    EntitySetName = 'salesInvoices';
-    SourceTable = "Sales Invoice Header";
+    EntityName = 'salesCreditMemo';
+    EntitySetName = 'salesCreditMemo';
+    SourceTable = "Sales Cr.Memo Header";
     DelayedInsert = true;
     ODataKeyFields = SystemId;
     ChangeTrackingAllowed = true;
@@ -65,14 +65,6 @@ page 73131 "APIV1 - PTE Sales Inv. Entity"
                 {
                     ApplicationArea = Basic, Suite;
                 }
-                field(quoteNo; Rec."Quote No.")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(orderNo; Rec."Order No.")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
                 field(preAssignedNo; Rec."Pre-Assigned No.")
                 {
                     ApplicationArea = Basic, Suite;
@@ -101,7 +93,7 @@ page 73131 "APIV1 - PTE Sales Inv. Entity"
                 {
                     ApplicationArea = Basic, Suite;
                 }
-                field(closed; Rec.Closed)
+                field(getWorkDescription; Rec.GetWorkDescription())
                 {
                     ApplicationArea = Basic, Suite;
                 }
@@ -138,10 +130,6 @@ page 73131 "APIV1 - PTE Sales Inv. Entity"
                     ApplicationArea = Basic, Suite;
                 }
                 field(pmtDiscountDate; Rec."Pmt. Discount Date")
-                {
-                    ApplicationArea = Basic, Suite;
-                }
-                field(directDebitMandateID; Rec."Direct Debit Mandate ID")
                 {
                     ApplicationArea = Basic, Suite;
                 }
