@@ -1,8 +1,8 @@
 {
-  "id": "2342c451-e1b9-46dd-815b-e0b1e30bd205",
+  "id": "e2320173-df0a-4162-99f9-c9c6295ac34b",
   "name": "API PowerBI",
   "publisher": "Marije Jennifer Brummel",
-  "version": "0.1.20240228.1",
+  "version": "0.1.20240322.0",
   "dependencies": [],
   "platform": "1.0.0.0",
   "application": "22.0.0.0",
