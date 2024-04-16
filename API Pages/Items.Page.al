@@ -42,6 +42,10 @@ page 73139 "APIV1 - PTE Items"
                 field(generalProductPostingGroupCode; Rec."Gen. Prod. Posting Group") { }
                 field(inventoryPostingGroupId; Rec."Inventory Posting Group Id") { }
                 field(inventoryPostingGroupCode; Rec."Inventory Posting Group") { }
+                field(parentItemCategoryCode; Rec."SUIT Parent Item Category Code") { }
+                field(availableForWMS; Rec."SUIT Available for WMS") { }
+                field(expirityGroupCode; Rec."SUIT Expiry Group Code") { }
+                field(status; Rec."SUIT Status") { }
                 field(lastModifiedDateTime; Rec.SystemModifiedAt) { }
 
             }
