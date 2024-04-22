@@ -9,12 +9,8 @@ page 73145 "PTE APIV1 - Customer"
     EntityName = 'customer';
     EntitySetName = 'customers';
     SourceTable = "Customer";
-    InsertAllowed = false;
-    ModifyAllowed = false;
-    DeleteAllowed = false;
     DelayedInsert = true;
     ODataKeyFields = SystemId;
-    ChangeTrackingAllowed = true;
     Extensible = false;
     Editable = false;
     DataAccessIntent = ReadOnly;
@@ -40,6 +36,20 @@ page 73145 "PTE APIV1 - Customer"
             field(territoryCode; Rec."Territory Code") { }
             field(globalDimension1Code; Rec."Global Dimension 1 Code") { }
             field(globalDimension2Code; Rec."Global Dimension 2 Code") { }
+            field("vpeCustomer"; Rec."SUIT VPE Customer") { }
+            field(salesInside; Rec."Sales inside") { }
+            field(opmerkingKrediet; Rec."Opmerking krediet") { }
+            field(toetsing; Rec.Toetsing) { }
+            field(creditlimitCheck; Rec."Creditlimit check") { }
+            field(creditlimitNatec; Rec."Creditlimit Natec") { }
+            field(creditlimitNatecEndDate; Rec."Creditlimit Natec end date") { }
+            field(creditlimitAtradiusEndDate; Rec."Creditlimit Atradius end date") { }
+            field(forecastingCustomer; Rec."Forecasting customer") { }
+            field(marginCustomer; Rec."Margin customer") { }
+            field(surchageCustomer; Rec."Surchage Customer") { }
+            field(customerInPortal; Rec."Customer in portal") { }
+            field(coulance; Rec.Coulance) { }
+            field(palletCustomer; Rec."Pallet Customer") { }
             field(chainName; Rec."Chain Name") { }
             field(budgetedAmount; Rec."Budgeted Amount") { }
             field(creditLimitLCY; Rec."Credit Limit (LCY)") { }

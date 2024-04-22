@@ -4,11 +4,11 @@ page 73144 "APIV1 - PTE Item Unit o. Meas."
     APIGroup = 'powerbi';
     APIVersion = 'v1.0';
     PageType = API;
-    Caption = 'unitOfMeasures';
-    EntityCaption = 'unitOfMeasure';
-    EntitySetCaption = 'unitOfMeasures';
-    EntityName = 'unitOfMeasure';
-    EntitySetName = 'unitOfMeasures';
+    Caption = 'itemUnitOfMeasures';
+    EntityCaption = 'itemUnitOfMeasure';
+    EntitySetCaption = 'itemUnitOfMeasures';
+    EntityName = 'itemUnitOfMeasure';
+    EntitySetName = 'itemUnitOfMeasures';
     SourceTable = "Item Unit of Measure";
     DelayedInsert = true;
     ODataKeyFields = SystemId;
