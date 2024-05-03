@@ -36,6 +36,8 @@ page 73145 "PTE APIV1 - Customer"
             field(territoryCode; Rec."Territory Code") { }
             field(globalDimension1Code; Rec."Global Dimension 1 Code") { }
             field(globalDimension2Code; Rec."Global Dimension 2 Code") { }
+            field(balanceLCY; Rec."Balance (LCY)") { }
+            field(balanceDueLCY; Rec."Balance Due (LCY)") { }
             field("vpeCustomer"; Rec."SUIT VPE Customer") { }
             field(salesInside; Rec."Sales inside") { }
             field(opmerkingKrediet; Rec."Opmerking krediet") { }
