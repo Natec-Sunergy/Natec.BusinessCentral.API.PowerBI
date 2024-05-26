@@ -64,6 +64,7 @@ page 73141 "APIV1 - PTE Sales D.L. Entity"
                 field(genBusPostingGroup; Rec."Gen. Bus. Posting Group") { }
                 field(genProdPostingGroup; Rec."Gen. Prod. Posting Group") { }
                 field(vatCalculationType; Rec."VAT Calculation Type") { }
+                field(orderTrackingInfoCode; rec."SUIT Order Tracking Info Code") { }
                 field(transactionType; Rec."Transaction Type") { }
                 field(transportMethod; Rec."Transport Method") { }
                 field(attachedToLineNo; Rec."Attached to Line No.") { }
