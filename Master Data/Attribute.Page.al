@@ -10,6 +10,7 @@ page 73142 "APIV1 - PTE Attribute Entity"
     EntitySetCaption = 'attributes';
     EntityName = 'attribute';
     EntitySetName = 'attributes';
+    SourceTableTemporary = true;
     PageType = API;
     SourceTable = "Item Attribute Value Selection";
     ODataKeyFields = SystemId;

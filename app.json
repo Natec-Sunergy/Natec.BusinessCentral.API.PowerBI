@@ -2,7 +2,7 @@
   "id": "e2320173-df0a-4162-99f9-c9c6295ac34b",
   "name": "API PowerBI",
   "publisher": "Marije Jennifer Brummel",
-  "version": "0.1.20240503.0",
+  "version": "0.1.20240527.0",
   "dependencies": [
     {
       "name": "EN00 - Natec Custom Data", "id": "89f38b6f-0e51-47b3-aac0-7da9ab1c2174",
