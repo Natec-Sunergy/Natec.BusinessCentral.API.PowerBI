@@ -1,15 +1,15 @@
-page 73150 "APIV1 - PTE Sales Doc. Entity"
+page 73133 "APIV1 - PTE Sales Doc. A. Ent."
 {
     PageType = API;
-    Caption = 'salesDocuments';
-    EntityCaption = 'SalesDocument';
-    EntitySetCaption = 'SalesDocuments';
+    Caption = 'salesArchiveDocuments';
+    EntityCaption = 'SalesArchiveDocument';
+    EntitySetCaption = 'SalesArchiveDocuments';
     APIPublisher = 'natec';
     APIGroup = 'powerbi';
     APIVersion = 'v1.0';
-    EntityName = 'salesDocument';
-    EntitySetName = 'salesDocuments';
-    SourceTable = "Sales Header";
+    EntityName = 'salesArchiveDocument';
+    EntitySetName = 'salesArchiveDocuments';
+    SourceTable = "Sales Header Archive";
     DelayedInsert = true;
     ODataKeyFields = SystemId;
     ChangeTrackingAllowed = true;
@@ -29,7 +29,6 @@ page 73150 "APIV1 - PTE Sales Doc. Entity"
                 field(sellToCustomerName; Rec."Sell-to Customer Name") { }
                 field(vatRegistrationNo; Rec."VAT Registration No.") { }
                 field(orderDate; Rec."Order Date") { }
-                field(insideSales; Rec."Sales inside") { }
                 field(sellToAddress; Rec."Sell-to Address") { }
                 field(sellToAddress2; Rec."Sell-to Address 2") { }
                 field(sellToCity; Rec."Sell-to City") { }
@@ -44,7 +43,6 @@ page 73150 "APIV1 - PTE Sales Doc. Entity"
                 field(amount; Rec.Amount) { }
                 field(vatReportingDate; Rec."VAT Reporting Date") { }
                 field(dueDate; Rec."Due Date") { }
-                field(quoteNo; Rec."Quote No.") { }
                 field(externalDocumentNo; Rec."External Document No.") { }
                 field(salespersonCode; Rec."Salesperson Code") { }
                 field(responsibilityCenter; Rec."Responsibility Center") { }
@@ -58,7 +56,6 @@ page 73150 "APIV1 - PTE Sales Doc. Entity"
                 field(shortcutDimension2Code; Rec."Shortcut Dimension 2 Code") { }
                 field(paymentDiscountPercentage; Rec."Payment Discount %") { }
                 field(pmtDiscountDate; Rec."Pmt. Discount Date") { }
-                field(directDebitMandateID; Rec."Direct Debit Mandate ID") { }
                 field(customerPostingGroup; Rec."Customer Posting Group") { }
                 field(locationCode; Rec."Location Code") { }
                 field(shipmentMethodCode; Rec."Shipment Method Code") { }
