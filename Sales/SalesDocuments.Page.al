@@ -28,6 +28,8 @@ page 73133 "APIV1 - PTE Sales Doc. Entity"
                 field(no; Rec."No.") { }
                 field(sellToCustomerName; Rec."Sell-to Customer Name") { }
                 field(vatRegistrationNo; Rec."VAT Registration No.") { }
+                field(orderDate; Rec."Order Date") { }
+                field(insideSales; Rec."Sales inside") { }
                 field(sellToAddress; Rec."Sell-to Address") { }
                 field(sellToAddress2; Rec."Sell-to Address 2") { }
                 field(sellToCity; Rec."Sell-to City") { }

@@ -12,7 +12,7 @@ page 73142 "APIV1 - PTE Attribute Entity"
     EntitySetName = 'attributes';
     SourceTableTemporary = true;
     PageType = API;
-    SourceTable = "Item Attribute Value Selection";
+    SourceTable = "PTE Item Attrubute";
     ODataKeyFields = SystemId;
     Extensible = false;
 
@@ -23,10 +23,10 @@ page 73142 "APIV1 - PTE Attribute Entity"
             repeater(General)
             {
                 field(id; Rec.SystemId) { }
-                field(attributeId; Rec."Attribute ID") { }
-                field(itemNumber; Rec."Inherited-From Key Value") { }
+                field(itemNumber; Rec."Item No.") { }
                 field(name; Rec."Attribute Name") { }
-                field(itemDescription; GetItemDescription()) { }
+                field(value; Rec.Value) { }
+                field(itemDescription; Rec.Description) { }
             }
         }
     }
@@ -35,6 +35,7 @@ page 73142 "APIV1 - PTE Attribute Entity"
         Item: Record Item;
         ItemAttributeValue: Record "Item Attribute Value";
         TempItemAttributeValue: Record "Item Attribute Value" temporary;
+        ItemAttributeValueSelection: Record "Item Attribute Value Selection" temporary;
         ItemAttributeValueMapping: Record "Item Attribute Value Mapping";
     begin
         Item.SetLoadFields("No.");
@@ -49,16 +50,13 @@ page 73142 "APIV1 - PTE Attribute Entity"
                     TempItemAttributeValue.INSERT;
                 UNTIL ItemAttributeValueMapping.NEXT = 0;
 
-            Rec.PopulateItemAttributeValueSelection(TempItemAttributeValue);
+            ItemAttributeValueSelection.PopulateItemAttributeValueSelection(TempItemAttributeValue);
+            Rec."Item No." := Item."No.";
+            Rec.Description := Item.Description;
+            Rec."Attribute Name" := ItemAttributeValueSelection."Attribute Name";
+            Rec.Value := ItemAttributeValueSelection.Value;
+            Rec."Unit of Measure" := ItemAttributeValueSelection."Unit of Measure";
+            Rec.Insert();
         until Item.Next() = 0;
-    end;
-
-    local procedure GetItemDescription(): Text
-    var
-        Item: Record Item;
-    begin
-        if Item.Get(Rec."Inherited-From Key Value") then
-            exit(Item.Description);
-        exit('');
     end;
 }
