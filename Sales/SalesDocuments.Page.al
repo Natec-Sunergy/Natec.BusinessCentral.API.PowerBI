@@ -1,4 +1,4 @@
-page 73150 "APIV1 - PTE Sales Doc. Entity"
+page 73152 "APIV1 - PTE Sales Doc. Entity"
 {
     PageType = API;
     Caption = 'salesDocuments';

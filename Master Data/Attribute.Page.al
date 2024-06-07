@@ -41,13 +41,19 @@ page 73142 "APIV1 - PTE Attribute Entity"
         Item.SetLoadFields("No.");
         Item.FindSet();
         repeat
+            ItemAttributeValueSelection.Reset();
+            ItemAttributeValueSelection.DeleteAll();
+            TempItemAttributeValue.Reset();
+            TempItemAttributeValue.DeleteAll();
+
             ItemAttributeValueMapping.SETRANGE("Table ID", DATABASE::Item);
             ItemAttributeValueMapping.SETRANGE("No.", Item."No.");
             IF ItemAttributeValueMapping.FINDSET THEN
                 REPEAT
-                    ItemAttributeValue.GET(ItemAttributeValueMapping."Item Attribute ID", ItemAttributeValueMapping."Item Attribute Value ID");
-                    TempItemAttributeValue.TRANSFERFIELDS(ItemAttributeValue);
-                    TempItemAttributeValue.INSERT;
+                    if ItemAttributeValue.GET(ItemAttributeValueMapping."Item Attribute ID", ItemAttributeValueMapping."Item Attribute Value ID") then begin
+                        TempItemAttributeValue.TRANSFERFIELDS(ItemAttributeValue);
+                        TempItemAttributeValue.INSERT;
+                    end;
                 UNTIL ItemAttributeValueMapping.NEXT = 0;
 
             ItemAttributeValueSelection.PopulateItemAttributeValueSelection(TempItemAttributeValue);
