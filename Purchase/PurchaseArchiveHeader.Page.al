@@ -1,14 +1,14 @@
-page 73147 "PTE APIV1 - Purchase Header"
+page 73155 "PTE APIV1 - Purchase A. Header"
 {
     PageType = API;
-    EntityCaption = 'Purchase Header';
-    EntitySetCaption = 'Purchase Headers';
+    EntityCaption = 'Purchase Archive Header';
+    EntitySetCaption = 'Purchase Archive Headers';
     APIPublisher = 'natec';
     APIGroup = 'powerbi';
     APIVersion = 'v1.0';
-    EntityName = 'purchaseHeader';
-    EntitySetName = 'purchaseHeaders';
-    SourceTable = "Purchase Header";
+    EntityName = 'purchaseArchiveHeader';
+    EntitySetName = 'purchaseArchiveHeaders';
+    SourceTable = "Purchase Header Archive";
     InsertAllowed = false;
     ModifyAllowed = false;
     DeleteAllowed = false;
@@ -54,7 +54,6 @@ page 73147 "PTE APIV1 - Purchase Header"
             field(balAccountNo; Rec."Bal. Account No.") { }
             field(receive; Rec."Receive") { }
             field(invoice; Rec."Invoice") { }
-            field(printPostedDocuments; Rec."Print Posted Documents") { }
             field(receivingNo; Rec."Receiving No.") { }
             field(postingNo; Rec."Posting No.") { }
             field(timestamp; Rec."SystemRowVersion") { }
@@ -137,12 +136,6 @@ page 73147 "PTE APIV1 - Purchase Header"
             field(prepmtPmtDiscountDate; Rec."Prepmt. Pmt. Discount Date") { }
             field(prepmtPaymentTermsCode; Rec."Prepmt. Payment Terms Code") { }
             field(prepmtPaymentDiscount; Rec."Prepmt. Payment Discount %") { }
-            field(quoteNo; Rec."Quote No.") { }
-            field(jobQueueStatus; Rec."Job Queue Status") { }
-            field(jobQueueEntryID; Rec."Job Queue Entry ID") { }
-            field(incomingDocumentEntryNo; Rec."Incoming Document Entry No.") { }
-            field(creditorNo; Rec."Creditor No.") { }
-            field(paymentReference; Rec."Payment Reference") { }
             field(dimensionSetID; Rec."Dimension Set ID") { }
             field(docNoOccurrence; Rec."Doc. No. Occurrence") { }
             field(campaignNo; Rec."Campaign No.") { }
@@ -160,10 +153,6 @@ page 73147 "PTE APIV1 - Purchase Header"
             field(ship; Rec."Ship") { }
             field(lastReturnShipmentNo; Rec."Last Return Shipment No.") { }
             field(assignedUserID; Rec."Assigned User ID") { }
-            field(docAmountInclVAT; Rec."Doc. Amount Incl. VAT") { }
-            field(docAmountVAT; Rec."Doc. Amount VAT") { }
-            field(transactionModeCode; Rec."Transaction Mode Code") { }
-            field(bankAccountCode; Rec."Bank Account Code") { }
         }
     }
 }

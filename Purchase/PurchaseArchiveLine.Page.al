@@ -1,14 +1,14 @@
-page 73148 "PTE APIV1 - Purchase Line"
+page 73156 "PTE APIV1 - Purchase A. Line"
 {
     PageType = API;
-    EntityCaption = 'Purchase Line';
-    EntitySetCaption = 'Purchase Lines';
+    EntityCaption = 'Purchase Archive Line';
+    EntitySetCaption = 'Purchase Archive Lines';
     APIPublisher = 'natec';
     APIGroup = 'powerbi';
     APIVersion = 'v1.0';
-    EntityName = 'purchaseLine';
-    EntitySetName = 'purchaseLines';
-    SourceTable = "Purchase Line";
+    EntityName = 'purchaseArchiveLine';
+    EntitySetName = 'purchaseArchiveLines';
+    SourceTable = "Purchase Line Archive";
     InsertAllowed = false;
     DelayedInsert = true;
     ModifyAllowed = false;
@@ -59,7 +59,6 @@ page 73148 "PTE APIV1 - Purchase Line"
             field(shortcutDimension2Code; Rec."Shortcut Dimension 2 Code") { }
             field(jobNo; Rec."Job No.") { }
             field(indirectCost; Rec."Indirect Cost %") { }
-            field(recalculateInvoiceDisc; Rec."Recalculate Invoice Disc.") { }
             field(outstandingAmount; Rec."Outstanding Amount") { }
             field(qtyRcdNotInvoiced; Rec."Qty. Rcd. Not Invoiced") { }
             field(amtRcdNotInvoiced; Rec."Amt. Rcd. Not Invoiced") { }
@@ -81,6 +80,7 @@ page 73148 "PTE APIV1 - Purchase Line"
             field(transportMethod; Rec."Transport Method") { }
             field(attachedtoLineNo; Rec."Attached to Line No.") { }
             field(entryPoint; Rec."Entry Point") { }
+            // field(area; Rec."Area") { }
             field(transactionSpecification; Rec."Transaction Specification") { }
             field(taxAreaCode; Rec."Tax Area Code") { }
             field(taxLiable; Rec."Tax Liable") { }
@@ -118,14 +118,7 @@ page 73148 "PTE APIV1 - Purchase Line"
             field(prepmtAmtDeducted; Rec."Prepmt Amt Deducted") { }
             field(prepaymentLine; Rec."Prepayment Line") { }
             field(prepmtAmountInvInclVAT; Rec."Prepmt. Amount Inv. Incl. VAT") { }
-            field(prepmtAmountInvLCY; Rec."Prepmt. Amount Inv. (LCY)") { }
             field(iCPartnerCode; Rec."IC Partner Code") { }
-            field(prepmtVATAmountInvLCY; Rec."Prepmt. VAT Amount Inv. (LCY)") { }
-            field(prepaymentVATDifference; Rec."Prepayment VAT Difference") { }
-            field(prepmtVATDifftoDeduct; Rec."Prepmt VAT Diff. to Deduct") { }
-            field(prepmtVATDiffDeducted; Rec."Prepmt VAT Diff. Deducted") { }
-            field(outstandingAmtExVATLCY; Rec."Outstanding Amt. Ex. VAT (LCY)") { }
-            field(aRcdNotInvExVATLCY; Rec."A. Rcd. Not Inv. Ex. VAT (LCY)") { }
             field(dimensionSetID; Rec."Dimension Set ID") { }
             field(jobTaskNo; Rec."Job Task No.") { }
             field(jobLineType; Rec."Job Line Type") { }
@@ -169,9 +162,14 @@ page 73148 "PTE APIV1 - Purchase Line"
             field(duplicateinDepreciationBook; Rec."Duplicate in Depreciation Book") { }
             field(useDuplicationList; Rec."Use Duplication List") { }
             field(responsibilityCenter; Rec."Responsibility Center") { }
+            // field(cross-ReferenceNo; Rec."Cross-Reference No.") { }
+            // field(unitofMeasureCrossRef; Rec."Unit of Measure (Cross Ref.)") { }
+            // field(cross-ReferenceType; Rec."Cross-Reference Type") { }
+            // field(cross-ReferenceTypeNo; Rec."Cross-Reference Type No.") { }
             field(itemCategoryCode; Rec."Item Category Code") { }
             field(nonstock; Rec."Nonstock") { }
             field(purchasingCode; Rec."Purchasing Code") { }
+            // field(productGroupCode; Rec."Product Group Code") { }
             field(specialOrder; Rec."Special Order") { }
             field(specialOrderSalesNo; Rec."Special Order Sales No.") { }
             field(specialOrderSalesLineNo; Rec."Special Order Sales Line No.") { }
@@ -194,7 +192,6 @@ page 73148 "PTE APIV1 - Purchase Line"
             field(returnShipmentNo; Rec."Return Shipment No.") { }
             field(returnShipmentLineNo; Rec."Return Shipment Line No.") { }
             field(returnReasonCode; Rec."Return Reason Code") { }
-            field(suggestedLine; Rec."Suggested Line") { }
             field(routingNo; Rec."Routing No.") { }
             field(operationNo; Rec."Operation No.") { }
             field(workCenterNo; Rec."Work Center No.") { }

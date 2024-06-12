@@ -15,6 +15,8 @@ page 73142 "APIV1 - PTE Attribute Entity"
     SourceTable = "PTE Item Attrubute";
     ODataKeyFields = SystemId;
     Extensible = false;
+    Editable = false;
+    DataAccessIntent = ReadOnly;
 
     layout
     {
