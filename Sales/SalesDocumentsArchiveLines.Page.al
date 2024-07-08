@@ -34,6 +34,9 @@ page 73151 "APIV1 - PTE Sales D.L.A. Ent."
                 field(locationCode; Rec."Location Code") { }
                 field(postingGroup; Rec."Posting Group") { }
                 field(shipmentDate; Rec."Shipment Date") { }
+                field(promisedDeliveryDate; Rec."Promised Delivery Date") { }
+                field(plannedDeliveryDate; Rec."Planned Delivery Date") { }
+                field(plannedShipmentDate; Rec."Planned Shipment Date") { }
                 field(description; Rec.Description) { }
                 field(description2; Rec."Description 2") { }
                 field(unitOfMeasure; Rec."Unit of Measure") { }
@@ -95,6 +98,10 @@ page 73151 "APIV1 - PTE Sales D.L.A. Ent."
                 field(qtyPerUnitOfMeasure; Rec."Qty. per Unit of Measure") { }
                 field(unitOfMeasureCode; Rec."Unit of Measure Code") { }
                 field(quantityBase; Rec."Quantity (Base)") { }
+                field(qtyToShip; Rec."Qty. to Ship") { }
+                field(quantityShipped; Rec."Quantity Shipped") { }
+                field(qtyToInvoice; Rec."Qty. to Invoice") { }
+                field(quantityInvoiced; Rec."Quantity Invoiced") { }
                 field(faPostingDate; Rec."FA Posting Date") { }
                 field(depreciationBookCode; Rec."Depreciation Book Code") { }
                 field(deprUntilFAPostingDate; Rec."Depr. until FA Posting Date") { }
