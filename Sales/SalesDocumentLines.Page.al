@@ -38,6 +38,9 @@ page 73141 "APIV1 - PTE Sales D.L. Entity"
                 field(description2; Rec."Description 2") { }
                 field(unitOfMeasure; Rec."Unit of Measure") { }
                 field(quantity; Rec.Quantity) { }
+                field(quantityShipped; Rec."Quantity Shipped") { }
+                field(quantityToInvoice; Rec."Qty. to Invoice") { }
+                field(quantityInvoiced; Rec."Quantity Invoiced") { }
                 field(unitPrice; Rec."Unit Price") { }
                 field(unitCostLCY; Rec."Unit Cost (LCY)") { }
                 field(vatPercentage; Rec."VAT %") { }
